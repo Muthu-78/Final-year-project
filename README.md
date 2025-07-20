@@ -1,26 +1,47 @@
-Project Overview
-This project is an IoT-based gas level detection system that uses sensor data (Temperature, Humidity, Gas Concentration) to predict gas levels (Safe, Warning, or Danger). It provides real-time alerts via email and sound warnings when hazardous levels are detected. The system includes an interactive Streamlit dashboard for monitoring and analysis.
+# Gas Level Detection and Alert System
 
-Key Features
-Real-Time Monitoring: Fetches live sensor data using ThingSpeak API.
+![Project Banner](https://via.placeholder.com/1200x400?text=Gas+Level+Detection+System) *(optional banner image)*
 
-Automated Alerts: Sends email notifications and plays warning sounds for dangerous gas levels.
+## Project Overview
+An IoT-based system that predicts gas levels (Safe/Warning/Danger) using sensor data (Temperature, Humidity, Gas Concentration) and triggers real-time alerts through email and sound notifications. Includes an interactive Streamlit dashboard for monitoring and analysis.
 
-Interactive Dashboard:
+## Key Features
+- **Real-Time Monitoring**
+  - Fetches live sensor data using ThingSpeak API
+  - Continuously updates gas level predictions
 
-Manual Input: Test custom sensor values.
+- **Alert System**
+  - Email notifications for hazardous levels
+  - Audio warnings for immediate danger detection
 
-Automatic Mode: Continuously checks and logs predictions.
+- **Interactive Dashboard**
+  - Manual input for custom sensor testing
+  - Automatic mode for continuous monitoring
+  - Data visualization of gas concentration trends
 
-Data Visualization: Displays gas concentration trends.
+- **Machine Learning Model**
+  - Stacked ensemble model (Random Forest, SVM, KNN)
+  - 100% accuracy on test data
+  - Scalable for additional sensor inputs
 
-Machine Learning Model: Uses a stacked ensemble model (Random Forest, SVM, KNN, etc.) with 100% accuracy on test data.
+## Technologies Used
+### Backend
+- Python 3
+- scikit-learn
+- pandas
+- numpy
 
-Technologies Used
-Backend: Python (scikit-learn, pandas, numpy)
+### Machine Learning
+- Stacked ensemble classifier
+- StandardScaler for feature normalization
+- LabelEncoder for target classes
 
-Machine Learning: Stacked ensemble model with StandardScaler
+### Frontend
+- Streamlit for web interface
+- Matplotlib/Seaborn for visualization
 
-Frontend: Streamlit
+### IoT Integration
+- ThingSpeak API for sensor data
+- SMTP for email alerts
+- Winsound for audio warnings
 
-IoT Integration: ThingSpeak API for real-time sensor data
