@@ -31,9 +31,10 @@ def send_email(data, prediction, timestamp):
         prediction (str): Predicted gas level.
         timestamp (str): Timestamp of prediction.
     """
-    sender_email "muthukumarcj7@gmail.com"
-    receiver_email = "dharshanagobi2@gmail.com"
-    password = ""
+   
+    sender_email = "your_email@gmail.com"  # ← User should replace this
+    receiver_email="receiver_email@gmail.com" # ← User should replace this
+    password = "your_app_password"         # ← User should replace this
     
     subject = f"Gas Level Prediction - {prediction}"
     body = f"Prediction Time: {timestamp}\n\nSensor Data:\n"
