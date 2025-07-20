@@ -44,8 +44,15 @@ An IoT-based system that predicts gas levels (Safe/Warning/Danger) using sensor 
 - SMTP for email alerts
 - Winsound for audio warnings
 
-## Configuration
-Before running, manually edit `app.py` with:
-- Your Gmail credentials (lines 12-13)
-- ThingSpeak API key (line 8)
+## Before Running
+1. Edit these lines in `app.py`:
+   ```python
+   #Email Configuration (lines 12-13)
+   sender_email = "your_email@gmail.com"  
+   password = "your_app_password"  
+
+   # ThingSpeak API (line 8)
+   THINGSPEAK_URL = "https://api.thingspeak.com/..."
+
+
 
