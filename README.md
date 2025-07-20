@@ -1,6 +1,5 @@
 # Gas Level Detection and Alert System
 
-![Project Banner](https://via.placeholder.com/1200x400?text=Gas+Level+Detection+System) *(optional banner image)*
 
 ## Project Overview
 An IoT-based system that predicts gas levels (Safe/Warning/Danger) using sensor data (Temperature, Humidity, Gas Concentration) and triggers real-time alerts through email and sound notifications. Includes an interactive Streamlit dashboard for monitoring and analysis.
